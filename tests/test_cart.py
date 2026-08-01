@@ -11,7 +11,7 @@ def test_add_single_product_to_cart(page):
     login_page.open_application()
     login_page.login("standard_user", "secret_sauce")
 
-    inventory_page.add_backpack_to_cart()
+    inventory_page.add_product_to_cart("Sauce Labs Backpack")
 
     actual_cart_count = inventory_page.get_cart_count()
     expected_cart_count = "1"
@@ -41,7 +41,7 @@ def test_remove_product_from_cart(page):
     login_page.open_application()
     login_page.login("standard_user", "secret_sauce")
 
-    inventory_page.add_backpack_to_cart()
+    inventory_page.add_product_to_cart("Sauce Labs Backpack")
     inventory_page.open_cart()
 
     cart_page.remove_backpack()
