@@ -1,7 +1,10 @@
-class CartPage:
+from pages.base_page import BasePage
+
+
+class CartPage(BasePage):
 
     def __init__(self, page):
-        self.page = page
+        super().__init__(page)
 
         self.page_title = ".title"
         self.cart_items = ".cart_item"
@@ -10,16 +13,16 @@ class CartPage:
         self.checkout_button = "#checkout"
 
     def get_page_title(self):
-        return self.page.locator(self.page_title).inner_text()
+        return self.get_text(self.page_title)
 
     def get_product_name(self):
-        return self.page.locator(self.product_name).inner_text()
+        return self.get_text(self.product_name)
 
     def get_cart_items_count(self):
-        return self.page.locator(self.cart_items).count()
+        return self.get_count(self.cart_items)
 
     def remove_backpack(self):
-        self.page.click(self.remove_backpack_button)
+        self.click(self.remove_backpack_button)
 
     def click_checkout(self):
-        self.page.click(self.checkout_button)
+        self.click(self.checkout_button)
