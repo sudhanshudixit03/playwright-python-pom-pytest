@@ -1,7 +1,10 @@
-class InventoryPage:
+from pages.base_page import BasePage
+
+
+class InventoryPage(BasePage):
 
     def __init__(self, page):
-        self.page = page
+        super().__init__(page)
 
         self.page_title = ".title"
         self.cart_icon = ".shopping_cart_link"
@@ -9,7 +12,7 @@ class InventoryPage:
         self.inventory_items = ".inventory_item"
 
     def get_page_title(self):
-        return self.page.locator(self.page_title).inner_text()
+        return self.get_text(self.page_title)
 
     def add_product_to_cart(self, product_name):
         product = self.page.locator(
@@ -26,13 +29,7 @@ class InventoryPage:
             self.add_product_to_cart(product_name)
 
     def get_cart_count(self):
-        return int(
-            self.page.locator(
-                self.cart_badge
-            ).inner_text()
-        )
+        return int(self.get_text(self.cart_badge))
 
     def go_to_cart(self):
-        self.page.locator(
-            self.cart_icon
-        ).click()
+        self.click(self.cart_icon)

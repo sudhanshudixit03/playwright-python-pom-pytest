@@ -1,7 +1,10 @@
-class LoginPage:
+from pages.base_page import BasePage
+
+
+class LoginPage(BasePage):
 
     def __init__(self, page):
-        self.page = page
+        super().__init__(page)
 
         self.username = "#user-name"
         self.password = "#password"
@@ -9,12 +12,12 @@ class LoginPage:
         self.error_message = "[data-test='error']"
 
     def open_application(self):
-        self.page.goto("https://www.saucedemo.com")
+        self.navigate("https://www.saucedemo.com/")
 
     def login(self, username, password):
-        self.page.fill(self.username, username)
-        self.page.fill(self.password, password)
-        self.page.click(self.login_button)
+        self.fill(self.username, username)
+        self.fill(self.password, password)
+        self.click(self.login_button)
 
     def get_error_message(self):
-        return self.page.locator(self.error_message).inner_text()
+        return self.get_text(self.error_message)
