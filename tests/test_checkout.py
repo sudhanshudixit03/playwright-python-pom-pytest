@@ -1,3 +1,4 @@
+from utils.json_reader import read_json
 from pages.login_page import LoginPage
 from pages.inventory_page import InventoryPage
 from pages.cart_page import CartPage
@@ -5,6 +6,9 @@ from pages.checkout_page import CheckoutPage
 from pages.overview_page import OverviewPage
 from pages.complete_page import CompletePage
 
+checkout_data = read_json("data/checkout_data.json")
+
+login_data = read_json("data/login_data.json")
 
 def test_complete_checkout_process(page):
     login_page = LoginPage(page)
@@ -15,7 +19,10 @@ def test_complete_checkout_process(page):
     complete_page = CompletePage(page)
 
     login_page.open_application()
-    login_page.login("standard_user", "secret_sauce")
+    login_page.login(
+        login_data["valid_user"]["username"],
+        login_data["valid_user"]["password"]
+    )
 
     inventory_page.add_product_to_cart("Sauce Labs Backpack")
 
@@ -34,9 +41,9 @@ def test_complete_checkout_process(page):
     cart_page.click_checkout()
 
     checkout_page.enter_checkout_information(
-        "Sudhanshu",
-        "Dixit",
-        "226001"
+        checkout_data["first_name"],
+        checkout_data["last_name"],
+        checkout_data["postal_code"]
     )
     checkout_page.click_continue()
 

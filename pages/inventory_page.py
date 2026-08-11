@@ -15,9 +15,7 @@ class InventoryPage(BasePage):
         return self.get_text(self.page_title)
 
     def add_product_to_cart(self, product_name):
-        product = self.page.locator(
-            self.inventory_items
-        ).filter(has_text=product_name)
+        product = self.page.locator(self.inventory_items).filter(has_text=product_name)
 
         product.get_by_role(
             "button",
