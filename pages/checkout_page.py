@@ -13,6 +13,8 @@ class CheckoutPage(BasePage):
         self.error_message = "[data-test='error']"
 
     def enter_checkout_information(self, first_name, last_name, postal_code):
+        self.logger.info("Entering checkout information")
+
         self.fill(self.first_name_input, first_name)
         self.fill(self.last_name_input, last_name)
         self.fill(self.postal_code_input, postal_code)
