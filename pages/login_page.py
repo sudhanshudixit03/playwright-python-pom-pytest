@@ -13,9 +13,11 @@ class LoginPage(BasePage):
         self.error_message = "[data-test='error']"
 
     def open_application(self):
+        self.logger.info("Opening SauceDemo application")
         self.navigate(BASE_URL)
 
     def login(self, username, password):
+        self.logger.info(f"Logging in with user: {username}")
         self.fill(self.username, username)
         self.fill(self.password, password)
         self.click(self.login_button)

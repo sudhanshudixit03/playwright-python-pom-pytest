@@ -1,0 +1,72 @@
+2026-08-11 17:30:51,120 | INFO | Navigating to URL: https://www.saucedemo.com/
+2026-08-11 17:30:52,321 | INFO | Entering value in element: #user-name
+2026-08-11 17:30:52,537 | INFO | Entering value in element: #password
+2026-08-11 17:30:52,585 | INFO | Clicking element: #login-button
+2026-08-11 17:30:53,073 | INFO | Getting text from element: .title
+2026-08-11 17:33:52,489 | INFO | Opening SauceDemo application
+2026-08-11 17:33:52,490 | INFO | Navigating to URL: https://www.saucedemo.com/
+2026-08-11 17:33:53,190 | INFO | Logging in with user: standard_user
+2026-08-11 17:33:53,190 | INFO | Entering value in element: #user-name
+2026-08-11 17:33:53,399 | INFO | Entering value in element: #password
+2026-08-11 17:33:53,442 | INFO | Clicking element: #login-button
+2026-08-11 17:33:53,697 | INFO | Adding product to cart: Sauce Labs Backpack
+2026-08-11 17:33:53,767 | INFO | Getting text from element: .shopping_cart_badge
+2026-08-11 17:33:53,781 | INFO | Clicking element: .shopping_cart_link
+2026-08-11 17:33:53,890 | INFO | Getting text from element: .title
+2026-08-11 17:33:53,908 | INFO | Getting text from element: .inventory_item_name
+2026-08-11 17:33:56,645 | INFO | Opening SauceDemo application
+2026-08-11 17:33:56,645 | INFO | Navigating to URL: https://www.saucedemo.com/
+2026-08-11 17:33:57,439 | INFO | Logging in with user: standard_user
+2026-08-11 17:33:57,439 | INFO | Entering value in element: #user-name
+2026-08-11 17:33:57,625 | INFO | Entering value in element: #password
+2026-08-11 17:33:57,666 | INFO | Clicking element: #login-button
+2026-08-11 17:33:57,912 | INFO | Adding product to cart: Sauce Labs Backpack
+2026-08-11 17:33:58,007 | INFO | Clicking element: .shopping_cart_link
+2026-08-11 17:33:58,129 | INFO | Clicking element: #remove-sauce-labs-backpack
+2026-08-11 17:33:58,167 | INFO | Getting count for locator: .cart_item
+2026-08-11 17:34:00,986 | INFO | Opening SauceDemo application
+2026-08-11 17:34:00,987 | INFO | Navigating to URL: https://www.saucedemo.com/
+2026-08-11 17:34:01,540 | INFO | Logging in with user: standard_user
+2026-08-11 17:34:01,540 | INFO | Entering value in element: #user-name
+2026-08-11 17:34:01,699 | INFO | Entering value in element: #password
+2026-08-11 17:34:01,735 | INFO | Clicking element: #login-button
+2026-08-11 17:34:01,939 | INFO | Adding product to cart: Sauce Labs Backpack
+2026-08-11 17:34:02,025 | INFO | Adding product to cart: Sauce Labs Bike Light
+2026-08-11 17:34:02,132 | INFO | Adding product to cart: Sauce Labs Bolt T-Shirt
+2026-08-11 17:34:02,178 | INFO | Getting text from element: .shopping_cart_badge
+2026-08-11 17:34:02,191 | INFO | Clicking element: .shopping_cart_link
+2026-08-11 17:34:02,263 | INFO | Getting count for locator: .cart_item
+2026-08-11 17:34:04,909 | INFO | Opening SauceDemo application
+2026-08-11 17:34:04,909 | INFO | Navigating to URL: https://www.saucedemo.com/
+2026-08-11 17:34:05,581 | INFO | Logging in with user: standard_user
+2026-08-11 17:34:05,581 | INFO | Entering value in element: #user-name
+2026-08-11 17:34:05,764 | INFO | Entering value in element: #password
+2026-08-11 17:34:05,798 | INFO | Clicking element: #login-button
+2026-08-11 17:34:06,016 | INFO | Adding product to cart: Sauce Labs Backpack
+2026-08-11 17:34:06,106 | INFO | Getting text from element: .shopping_cart_badge
+2026-08-11 17:34:06,119 | INFO | Clicking element: .shopping_cart_link
+2026-08-11 17:34:06,213 | INFO | Getting text from element: .title
+2026-08-11 17:34:06,226 | INFO | Clicking element: #checkout
+2026-08-11 17:34:06,293 | INFO | Entering checkout information
+2026-08-11 17:34:06,294 | INFO | Entering value in element: #first-name
+2026-08-11 17:34:06,322 | INFO | Entering value in element: #last-name
+2026-08-11 17:34:06,358 | INFO | Entering value in element: #postal-code
+2026-08-11 17:34:06,389 | INFO | Clicking element: #continue
+2026-08-11 17:34:06,462 | INFO | Getting text from element: .title
+2026-08-11 17:34:06,513 | INFO | Clicking element: #finish
+2026-08-11 17:34:06,562 | INFO | Getting text from element: .title
+2026-08-11 17:34:06,576 | INFO | Getting text from element: .complete-header
+2026-08-11 17:34:09,464 | INFO | Opening SauceDemo application
+2026-08-11 17:34:09,464 | INFO | Navigating to URL: https://www.saucedemo.com/
+2026-08-11 17:34:10,067 | INFO | Logging in with user: standard_user
+2026-08-11 17:34:10,068 | INFO | Entering value in element: #user-name
+2026-08-11 17:34:10,246 | INFO | Entering value in element: #password
+2026-08-11 17:34:10,281 | INFO | Clicking element: #login-button
+2026-08-11 17:34:10,461 | INFO | Getting text from element: .title
+2026-08-11 17:34:13,115 | INFO | Opening SauceDemo application
+2026-08-11 17:34:13,115 | INFO | Navigating to URL: https://www.saucedemo.com/
+2026-08-11 17:34:13,698 | INFO | Logging in with user: invalid_user
+2026-08-11 17:34:13,698 | INFO | Entering value in element: #user-name
+2026-08-11 17:34:13,873 | INFO | Entering value in element: #password
+2026-08-11 17:34:13,942 | INFO | Clicking element: #login-button
+2026-08-11 17:34:14,030 | INFO | Getting text from element: [data-test='error']
